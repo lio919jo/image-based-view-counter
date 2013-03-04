@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /counter/
+RewriteCond %{REQUEST_URI} !-f
+RewriteRule ^(.+)/$ index.php [L]
