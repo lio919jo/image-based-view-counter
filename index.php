@@ -1,9 +1,5 @@
 <?php
 require_once('config.php');
-$link = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS);
-if(!$link)
-	die('There was a database error during setup. Please try again later.'.mysql_error());
-mysql_select_db(MYSQL_DABA);
 $request = array_filter(explode('/', $_SERVER['REQUEST_URI']));
 array_shift($request);
 if($request[0])
